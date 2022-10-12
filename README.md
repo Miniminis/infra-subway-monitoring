@@ -140,7 +140,6 @@ $ stress -c 2
 ### 2. Cloudwatch 대시보드 URL을 알려주세요
 ---
 
-
 ## [추가] WAS 개선하기
 ### 1. 성능 개선 결과를 공유해주세요 (Smoke, Load, Stress 테스트 결과)
 
