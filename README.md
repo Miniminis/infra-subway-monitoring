@@ -60,14 +60,14 @@ npm run dev
 
 #### 경쟁사와 비교
 
-![img.png](img.png)
-![img_2.png](img_2.png)
+![img.png](images/img.png)
+![img_2.png](images/img_2.png)
 
 <br>
 
 ### 2. 성능 개선 결과를 공유해주세요 (Smoke, Load, Stress 테스트 결과)
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
 <br>
 
@@ -86,7 +86,7 @@ npm run dev
   - 전달되는 리소스의 크기는 1.2kb에서 893b로 줄었고,
   - 그에 따라 응답속도 역시 기존의 37ms 에서 10ms 으로 훨씬 빨라지게 되었다. 
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 <br>
 
@@ -94,14 +94,14 @@ npm run dev
 - 기존에는 png, js, css 파일과 같은 정적 파일들이 cache가 적용되지 않았기 때문에 변경되지 않은 내용임에도 매번 WAS 서버까지 요청이 전달되어 응답이 느리고 무거웠었다. 
 - nginx 내 설정을 통해 정적파일에 대한 캐싱을 적용하니, FCP, TTI 등 성능에 관한 주요 지표들이 눈에띄게 향상된 것을 알 수 있었다. 
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 
 #### TLS, HTTP 2.0 설정하여 웹 프로토콜 최적화하기
 - 역시 nginx 설정 상에서 응답을 http2 로 내려주도록 설정을 적용했고,
 - 그 결과, 전송되는 패킷의 크기 및 전송 시간이 이전에 비해 확연히 좋아진 것을 확인할 수 있었다. 
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
 
 #### 정적 파일을 경량화하여 패킷의 크기 자체를 줄이기
@@ -110,7 +110,7 @@ npm run dev
 - 그 결과는 놀랍게도 절대 맞추지 못할 것 같았던 FCP를 목표 시간 이내인 3초보다도 더 빠른 2.5초 내로 맞출 수 있었고, TTI 역시 이전 수치들보다 좋아졌다. 
 - 이 단계까지 왔을 때는 리소스의 크기도 적으면서 전체적인 응답 속도가 훨씬 향상된 결과를 발견할 수 있었다. 
 
-![img_6.png](img_6.png)
+![img_6.png](images/img_6.png)
 
 ---
 
